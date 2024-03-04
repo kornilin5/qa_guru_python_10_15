@@ -34,7 +34,7 @@
 
 <!-- Jenkins -->
 
-### <img width="3%" title="Jenkins" src="images/logo_stacks/jenkins.png"> Запуск проекта в Jenkins
+### <img width="3%" title="Jenkins" src="images/jenkins.png"> Запуск проекта в Jenkins
 
 ### [Задача в jenkins](https://jenkins.autotests.cloud/job/010-kornilin5-home_work_15/)
 
