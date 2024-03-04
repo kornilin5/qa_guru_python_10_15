@@ -1,6 +1,6 @@
 import allure
 from allure_commons.types import Severity
-from NEXIGN_ORG.model.main_panel.MainPanelTest import PanelTest
+from qa_guru_python_15.model.main_panel.MainPanelTest import PanelTest
 
 
 @allure.tag('nexign')

@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene import browser
-from NEXIGN_ORG.utils import attach
+from qa_guru_python_15.utils import attach
 from dotenv import load_dotenv
 import os
 
