@@ -1,7 +1,7 @@
 from selene import browser, have
 
 
-class PanelTest():
+class Panel():
 
     def open(self):
         browser.open('/')
