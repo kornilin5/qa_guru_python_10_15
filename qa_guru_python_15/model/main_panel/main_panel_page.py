@@ -1,7 +1,7 @@
 from selene import browser, have
 
 
-class Panel():
+class Panel:
 
     def open(self):
         browser.open('/')
@@ -19,8 +19,8 @@ class Panel():
                        "Техническое сопровождение"))
 
     def should_about_company(self):
-        browser.element(".menu-new > .menu-item:nth-child(4) > span").click()
-        browser.all('.active > .menu .menu-item').should(
+        browser.all('.header__navigation .menu-new>li>span').element_by(have.exact_text('О компании')).click()
+        browser.all('.active .menu .menu-item').should(
             have.texts('О Nexign', 'Новости', 'Истории успеха', 'СМИ о нас',
                        'Конференции и выставки', 'Блог', 'Устойчивое развитие',
                        'Годовые отчеты', 'Признание в отрасли',

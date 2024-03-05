@@ -6,8 +6,7 @@ from qa_guru_python_15.model.main_panel.main_panel_page import Panel
 @allure.tag('nexign')
 @allure.severity(Severity.NORMAL)
 @allure.label('Owner', 'Kornilin5')
-@allure.feature('Contacts')
-@allure.story('contacts information')
+@allure.feature('Panel information')
 @allure.link('https://nexign.com/ru', name='Testing')
 def test_panel():
     main_panel = Panel()
