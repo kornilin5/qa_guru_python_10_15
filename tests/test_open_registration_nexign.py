@@ -1,4 +1,4 @@
-from qa_guru_python_15.model.registration_form.registratiom_form_page import Registration
+from qa_guru_python_15.model.pages.registration_page import RegistrationPage
 import allure
 from allure_commons.types import Severity
 
@@ -9,13 +9,9 @@ from allure_commons.types import Severity
 @allure.feature('Open registation form')
 @allure.link('https://nexign.com/ru', name='Testing')
 def test_open_registration_form():
-    registration = Registration()
+    registration = RegistrationPage()
 
-    with allure.step('Открытие страницы'):
-        registration.open()
+    registration.open()
 
-    with allure.step('Открытие формы регистрации'):
-        registration.open_registration_form()
-
-    with allure.step('Проверка обязательных полей'):
-        registration.should_required_items()
+    registration.open_registration_form()
+    registration.should_required_items()

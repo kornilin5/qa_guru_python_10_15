@@ -1,4 +1,4 @@
-from qa_guru_python_15.model.search_functionality.search import SearchPage
+from qa_guru_python_15.model.pages.search_page import SearchPage
 import allure
 from allure_commons.types import Severity
 
@@ -11,11 +11,7 @@ from allure_commons.types import Severity
 def test_search_functionality():
     search = SearchPage()
 
-    with allure.step('Открытие страницы'):
-        search.open()
+    search.open()
 
-    with allure.step('Поиск элемента'):
-        search.search_element()
-
-    with allure.step('Проверка результата поиска'):
-        search.should_search_result()
+    search.search_element()
+    search.should_search_result()

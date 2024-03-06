@@ -1,6 +1,6 @@
 import allure
 from allure_commons.types import Severity
-from qa_guru_python_15.model.main_panel.main_panel_page import Panel
+from qa_guru_python_15.model.pages.panel_page import PanelPage
 
 
 @allure.tag('nexign')
@@ -9,19 +9,11 @@ from qa_guru_python_15.model.main_panel.main_panel_page import Panel
 @allure.feature('Panel information')
 @allure.link('https://nexign.com/ru', name='Testing')
 def test_panel():
-    main_panel = Panel()
+    main_panel = PanelPage()
 
-    with allure.step('Открытие страницы'):
-        main_panel.open()
+    main_panel.open()
 
-    with allure.step('Проверка раздела контактов'):
-        main_panel.should_contacts()
-
-    with allure.step('Проверка раздела услуг'):
-        main_panel.should_services()
-
-    with allure.step('Проверка раздела о компании'):
-        main_panel.should_about_company()
-
-    with allure.step('Проверка раздела store'):
-        main_panel.should_store()
+    main_panel.should_contacts()
+    main_panel.should_services()
+    main_panel.should_about_company()
+    main_panel.should_store()
